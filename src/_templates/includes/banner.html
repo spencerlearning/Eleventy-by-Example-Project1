@@ -1,0 +1,10 @@
+{% if title or bannerContent %}
+{% if pageID == "home" %}
+<section class="banner banner--home">
+{% else %}
+<section class="banner">
+{% endif %}
+  {% if title %}<h1>{{ title }}</h1>{% endif %}
+  {% if bannerContent %}<p>{{ bannerContent }}</p>{% endif %}
+</section>
+{% endif %}
